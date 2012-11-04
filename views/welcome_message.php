@@ -215,14 +215,41 @@ Date:   Sun Nov 4 12:12:54 2012 +0000
 <h2>The git commit command adds to the repository from the staging index</h2>
 
 
+<p>When adding the "." means adds all file in the directory. You can just add a single file using 
+  git add single_file.txt.</p>
+
+
+  <p>Each commit has a number that is associated with it. An ID number. It is a checksum for each change set. It 
+  	is a hash algorithm called a SHA value. It is 40 characters long.</p>
+
+<h2>HEAD</h2>
+
+<ul>
+<li>pointer to the tip of current branch in repository</li>
+<li>last state of repository , what was last checked out</li>
+<li>points to parent of next commit</li>
+<li>place where recording next takes places</li>
+
+</ul>
+
+
+<h2>git status</h2>
+<p>This reports the difference between the working copy, staging index and the repository.</p>
+
+
+
+
 
                
 	</div>
+
+
 
                
 
 	
 </div>
+
 
 </body>
 </html>

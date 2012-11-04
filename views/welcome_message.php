@@ -235,6 +235,52 @@ Date:   Sun Nov 4 12:12:54 2012 +0000
 
 <h2>git status</h2>
 <p>This reports the difference between the working copy, staging index and the repository.</p>
+<p>With nothing to commit, ie with the three directories the same.</p>
+<p>With a change to working directory, the output is:</p>
+<pre> git status
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   views/welcome_message.php
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+</pre>
+
+<p>The output implies that there are things in the working 
+	directory which are not being tracked.</p>
+	<p>These can be added to the staging index using the "add" command</p>
+	<p>When this is done, the git status command produces and output as shown below, which
+		implies that there is data to be shifted from the staging index to the repository using 
+		the commit command.</p>
+
+<pre> git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   views/welcome_message.php
+</pre>
+<p>If there are both data to shift from both staging index and working directory, the git 
+status output is:</p>
+<pre>git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   views/welcome_message.php
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   views/welcome_message.php
+</pre>
+
+
+
+
 
 
 

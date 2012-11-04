@@ -155,11 +155,65 @@ drwxr-xr-x  4 ireto ireto 4096 2012-11-04 11:29 refs
 
            <h2>Commiting</h2>
 
-           <P>The most important instruction. Tell git to add every change to the directory. then
-           	commit all teh changes to git</P>
+           <p>The most important instruction. Tell git to add every change to the directory. Then
+           	commit all the changes to git</p>
 
            <code>git add .</code>
            <code>git commit -m "Initial commit"</code>
+           <p>The "-m" means the commit has a message attached to it.</p>
+
+           <P>This produces the following output, detailing the operation</P>
+
+           <pre>
+           ireto@ubuntu:/var/www/git/application$ git add .
+ireto@ubuntu:/var/www/git/application$ git commit -m "initial commit"
+[master (root-commit) 060482b] initial commit
+ 35 files changed, 1676 insertions(+), 0 deletions(-)
+ create mode 100644 .htaccess
+ create mode 100644 cache/.htaccess
+
+           </pre>
+
+           <p>The basic process is as follows:</p>
+
+           <ol>
+           	<li>Make changes</li>
+           	<li>Add the changes</li>
+           	<li>Commit the changes to the repository with a message</li>
+           </ol>
+
+           <p>The commit messages need to be descriptive. This is a best practice.</p>
+
+           <p>The commit log can be seen by</p>
+           <code>git log</code>
+           <p>This produces an out put like:</p>
+           <pre>git log
+commit 060482bffd4f277900cca8b155376665b82c01fa
+Author: Iret <apcb34@dsl.pipex.com>
+Date:   Sun Nov 4 12:12:54 2012 +0000
+
+    initial commit
+</pre>
+
+      <p>You can limit number of commits to show</p>
+      <code>git log -n 3</code>
+
+      <p>You can limit the time frame of commits</p>
+      <code>git log --since=2012-06-14</code>
+
+      <p>You just select an author</p>
+      <code>git log --author="Kevin"</code>
+
+      <p>You just select a commit message containing a particular word by using a grep statement</p>
+      <code>git log --grep="Init"</code>
+
+
+
+
+<h2>The git add command adds to the staging index from the working copy</h2>
+
+<h2>The git commit command adds to the repository from the staging index</h2>
+
 
 
                

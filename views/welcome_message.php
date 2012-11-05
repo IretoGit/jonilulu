@@ -338,6 +338,17 @@ rm 'views/f2.txt'
 <li>Let git do the whole thing.</li>
 </ol>
 
+<p>In git a rename and move are the same thing</p>
+
+<code>git mv f1.txt f2.txt
+</code>
+<pre># On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    f1.txt -> f2.txt
+</pre>
+
                
 	</div>
 

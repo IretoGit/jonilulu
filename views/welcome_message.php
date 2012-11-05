@@ -331,7 +331,12 @@ rm 'views/f2.txt'
  delete mode 100644 views/f2.txt
 </pre>
 
-
+<h2>Moving and renaming files</h2>
+<p>There are two ways to acheive this</p>
+<ol>
+<li>Let the operating system do it, then tell git about the changes</li>
+<li>Let git do the whole thing.</li>
+</ol>
 
                
 	</div>

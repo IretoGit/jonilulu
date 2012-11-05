@@ -303,6 +303,8 @@ index 71591dd..6d0be9c 100644
 
 <code>git diff --staged</code>
 
+<h2>deleting files</h2>
+
 
 
 

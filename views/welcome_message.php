@@ -366,7 +366,10 @@ rm 'views/f2.txt'
 <p>The message associated with the commit can be changed</p>
 <p>The SHAH number cannot change</p>
 
+<p>The code below changes the most recent commit. Note the SHAH changes as well as the message</p>
+
 <code>git edit --amend -m "message for amend"</code>
+
 
 
 

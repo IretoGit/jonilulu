@@ -280,7 +280,28 @@ status output is:</p>
 
 
 
+<h2>Viewing differences between files</h2>
+<p>The command git diff shows differences between repository and working version</p>
+<code>git diff</code>
+<pre> git diff
+diff --git a/views/welcome_message.php b/views/welcome_message.php
+index 71591dd..6d0be9c 100644
+--- a/views/welcome_message.php
++++ b/views/welcome_message.php
+@@ -280,7 +280,7 @@ status output is:</p>
+ 
+ 
+ 
+-
++<h2>Viewing differences between files</h2>
+ 
+</pre>
 
+<p>git diff shows things which are unique about the working directory</p>
+
+<p>To show changes against the staging server use:</p>
+
+<code>git diff --staged</code>
 
 
 

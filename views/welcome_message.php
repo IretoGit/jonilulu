@@ -357,8 +357,6 @@ rm 'views/f2.txt'
 
 <pre>git checkout -- "current file name"</pre>
 
-               
-	</div>
 
 <h2>ammending commits</h2>
 <p>The most recent commitvalue is the only one which can be edited.</p>
@@ -374,6 +372,11 @@ rm 'views/f2.txt'
 <p>Just grab an old shah number</p>
 <p>using this, the code is</p>
 
+               
+	</div>
+
+
+
 
 
 
@@ -388,4 +391,3 @@ rm 'views/f2.txt'
 
 </body>
 </html>
-ear

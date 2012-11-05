@@ -374,6 +374,8 @@ rm 'views/f2.txt'
 <p>Just grab an old shah number</p>
 <p>using this, the code is</p>
 
+<code>git reverse "shah number"</code>
+
                
 	</div>
 

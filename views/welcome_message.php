@@ -303,9 +303,33 @@ index 71591dd..6d0be9c 100644
 
 <code>git diff --staged</code>
 
-<h2>deleting files</h2>
+<h2>Deleting tracked files</h2>
 
+<p>This refers to files which are already in the repository</p>
 
+<code>git rm f1.txt f2.txt</code>
+
+<p>This produces an out put </p>
+
+<pre>rm 'views/f1.txt'
+rm 'views/f2.txt'
+</pre>
+
+<p>This produces an out put of:</p>
+<pre> On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    f1.txt
+#	deleted:    f2.txt
+</pre>
+
+<p>Commiting this will remove the files from the repository. The output is below</p>
+<pre>[master f049bad] to remove the files
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 views/f1.txt
+ delete mode 100644 views/f2.txt
+</pre>
 
 
 

@@ -366,8 +366,6 @@ rm 'views/f2.txt'
 <p>The message associated with the commit can be changed</p>
 
 
-<p>The code below changes the most recent commit. Note the SHAH changes as well as the message</p>
-
 <code>git edit --amend -m "message for amend"</code>
 
 <h2>Retrieving old versions</h2>
@@ -375,7 +373,6 @@ rm 'views/f2.txt'
 <p>It is possible to revert to an old commit.</p>
 <p>Just grab an old shah number</p>
 <p>using this, the code is</p>
-
 
 
 

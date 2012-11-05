@@ -360,6 +360,15 @@ rm 'views/f2.txt'
                
 	</div>
 
+<h2>ammending commits</h2>
+<p>The most recent commitvalue is the only one which can be edited.</p>
+<p>It is possible to edit the change or data commited</p>
+<p>The message associated with the commit can be changed</p>
+<p>The SHAH number cannot change</p>
+
+<code>git edit --amend -m "message for amend"</code>
+
+
 
 
                
@@ -370,3 +379,4 @@ rm 'views/f2.txt'
 
 </body>
 </html>
+ear

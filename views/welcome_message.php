@@ -349,6 +349,14 @@ rm 'views/f2.txt'
 #	renamed:    f1.txt -> f2.txt
 </pre>
 
+<h2>Undoing changes to working directory</h2>
+
+<p>This is acheived by using the git checkout command</p>
+
+<p>Make sure as a safety precaution to use the -- command, to stay on the current branch</p>
+
+<pre>git checkout -- "current file name"</pre>
+
                
 	</div>
 

@@ -598,7 +598,9 @@ M	views/welcome_message.php
 Switched to a new branch 'second_new_feature'
 </pre>
 
-
+<p>To compare branches</p>
+<code>git diff master..new_feature</code>
+<pre></pre>
 
   
                

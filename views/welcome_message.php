@@ -403,6 +403,147 @@ rm 'views/f2.txt'
 
 <code>git reset --mixed 42419cede59712a6ad75731548e337a45ebd25c2
 </code>
+
+<p>Code to do a hard reset</p>
+<p>This makes repository, staging index and working copy point to the same thing. This is a very powerful command.</p>
+
+<code>git reset --hard 42419cede59712a6ad75731548e337a45ebd25c2
+</code>
+
+<h2>How to remove unwanted files from working directory</h2>
+
+<p>Just use the git clean command. it will permanently delete them</p>
+
+<p>To check what will be removed</p>
+<code>git clean -n</code>
+
+<p>to do a hard remove</p>
+<code>git clean -f</code>
+
+<h2>Ignoring files</h2>
+<p>There are times when files in a git repository need to be ignored</p>
+<p>An example is a log file which constantly changes</p>
+<p>If this problem is not dealt with, a user will be constantly bombarded with
+requests for commits.</p>
+<p>Files to ignore are detailed in a special file called a .gitignore file. It is put in the root directory of the project</p>
+<p>The files to ignore can be a list of files or regular expressions.</p>
+<p>The .gitignore file must be commited to the project.</p>
+<p>Example of a .gitignore file.</p>
+
+<pre>
+	#comment
+tempfile.txt
+.DS_STORE
+*.zip
+*.gz
+log/*.log
+log/*.log.[0-9]
+assets/photoshop/
+assesets/videos/
+!assets/videos/tour_*.mp4
+
+</pre>
+
+<p>There is a git repository for .ignorefiles containing suggested .gitignore files
+for various situations or languages</p>
+<p>https://github.com/github/gitignore</p>
+
+<h2>Ignoring tracked file</h2>
+<p>Sometimes you need to ignore </p>
+<p>You must remove it from the staging index and alter the .gitignore file</p>
+<p>Using this method it physically will remain. It is just not tracked.</p>
+<code> git rm --cached "name of file to stop tracking"</code>
+
+
+<h2>Tracking empty files</h2>
+<p>Git is designed to track files. Not directories. It ignores empty directories.</p>
+<p>To track an empty file , put something in it.</p>
+
+<h2>The commit tree</h2>
+
+<p>You can reference a commit by the full SHAH or a shortened SHAHs</p>
+<p>A commit can be referenced by a HEAD pointer or branch reference</p>
+<p>Commits can be referenced by its ancestory</p>
+
+<p>for parent commit</p>
+
+<ul>
+<li>HEAD^,  acgfr^, master^</li>
+<li>HEAD~1, HEAD~</li>
+
+
+</ul>
+
+<p>for grand parent commit</p>
+
+<ul>
+<li>HEAD^^,  acgfr^^, master^^</li>
+<li>HEAD~2, </li>
+
+</ul>
+
+<p>for great grand parent commit</p>
+
+<ul>
+<li>HEAD^^^,  acgfr^^^, master^^^</li>
+<li>HEAD~3, </li>
+
+</ul>
+
+<p>To print out what is in a tree</p>
+<code>git ls-tree HEAD</code>
+
+<pre>:/var/www/git/application$ git ls-tree HEAD^^^
+100644 blob 14249c50bd7605225950b2d372f352a2dba9252a	.htaccess
+040000 tree c9170f1e5ab6f85309907001f6e0b4672e780017	cache
+040000 tree e7e8f649e9ed9b8be75b31131434146c646b7154	config
+040000 tree ce7ff2dd4cfe2bb104429be993e4d65334d8466c	controllers
+040000 tree 5882a80309f3ec42d046f57ff91f96211414cc71	core
+040000 tree 5284f121d87b598f8308d88090f7dc28371ee23d	errors
+100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391	f2.txt
+040000 tree 5882a80309f3ec42d046f57ff91f96211414cc71	helpers
+040000 tree 5882a80309f3ec42d046f57ff91f96211414cc71	hooks
+100644 blob c942a79ce6ad0d5cf6bd0b390844cb5e55358f15	index.html
+040000 tree 26679ca51bfc356fccfdbcff8a68983d9ed63ba6	language
+040000 tree 5882a80309f3ec42d046f57ff91f96211414cc71	libraries
+040000 tree 5882a80309f3ec42d046f57ff91f96211414cc71	logs
+040000 tree 5882a80309f3ec42d046f57ff91f96211414cc71	models
+040000 tree 5882a80309f3ec42d046f57ff91f96211414cc71	third_party
+040000 tree 208397d7be49e7ce78cc0c586ecadeaecd61a632	views
+</pre>
+
+
+<h2>Options for git log</h2>
+
+<p>to get a one line listing of log file</p>
+<code>git log --oneline</code>
+<pre>bea0891 edit 19 wanted
+42419ce more text edits 11
+6c25cfd Revert "more text edits 10"
+6151fae Revert "more text edits 6"
+c422042 more text edits 10
+fbe2727 Revert "more text edits 8"
+ce99d39 more text edits 9
+b94e0bc more text edits 8
+ee10c5a more text edits 7
+7b8c1b5 more text edits 6
+</pre>
+
+<p>To show just 3 commits</p>
+<code>git log --oneline -3</code>
+
+<pre>git log --oneline -3
+bea0891 edit 19 wanted
+42419ce more text edits 11
+6c25cfd Revert "more text edits 10"
+</pre>
+<p>You can also serach by author and time.In addition grep can be used</p>
+
+<p>To show contents of a commit. All details of the commit are shown</p>
+<code>git show "SHA"</code>
+
+
+
                
 	</div>
 

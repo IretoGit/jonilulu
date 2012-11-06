@@ -623,7 +623,14 @@ Switched to a new branch 'second_new_feature'
 
 
 
-<h1>stuff for new branch</h1>
+<p>To merge a branch with another. First get into the branch you want to recive the changes.</p>
+<p>Then do the merge control</p>
+<code>git merge "branch with changes to join current branch"</code>
+<pre>git merge new
+Updating 0e990d8..221e3a3
+Fast-forward
+ views/welcome_message.php |   18 ++++++++++++++----
+</pre>
 
 
                

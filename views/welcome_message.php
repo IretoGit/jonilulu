@@ -362,11 +362,10 @@ rm 'views/f2.txt'
 <p>The most recent commitvalue is the only one which can be edited.</p>
 <p>It is possible to edit the change or data commited</p>
 <p>The message associated with the commit can be changed</p>
-
-
-<p>The code below changes the most recent commit. Note the SHAH changes as well as the message</p>
+<p>The SHAH number cannot change</p>
 
 <code>git edit --amend -m "message for amend"</code>
+
 
 <h2>Retrieving old versions</h2>
 
@@ -376,8 +375,37 @@ rm 'views/f2.txt'
 
 <code>git reverse "shah number"</code>
 
+<h2>How to move the head pointer</h2>
+
+<p>git reset</p>
+<p>There are three options:</p>
+
+<ul>
+<li>--soft:  does not change staging index or working directory</li>
+<li>--hard: changes staging index and working directory to match repository</li>
+<li>--mixed: (default) changes staging index to match repository, does not change working directory</li>
+</ul>
+
+
+
+<h2>To show where head points to:</h2>
+<code>cat .git/HEAD</code>
+
+<p>Code to do a soft reset</p>
+<p>This only changes the repo. Staging and working are left alone</p>
+<p>git status will show a difference between staging and repo. Commiting this will revert repo head change.</p>
+
+<code>git reset --soft 42419cede59712a6ad75731548e337a45ebd25c2
+</code>
+
+<p>Code to do a mixed reset</p>
+<p>This makes what is in the staging index the same as the repository. Leaves the working directory alone.</p>
+
+<code>git reset --mixed 42419cede59712a6ad75731548e337a45ebd25c2
+</code>
                
 	</div>
+
 
 
 

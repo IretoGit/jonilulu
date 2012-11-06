@@ -600,20 +600,30 @@ Switched to a new branch 'second_new_feature'
 
 <p>To compare branches</p>
 <code>git diff master..new_feature</code>
-<pre></pre>
 
+
+
+<p> To find out if current branch completely encompasses another branch. It will list all branches which can be contained in the current branch.</p>
+
+<code>git branch --merged</code>
   
-               
+ <p>To rename a branch, it must be renamed</p>  
+
+ <code>git -m "old title"  "new title"</code>            
+
 	</div>
 
 
+<p>To delete a branch</p>
+<code>git branch -d branch_name</code>
+<p>Or</p>
+<code>git branch --delete branch_name</code>
+<p>You cannot delete the current branch, you have to be in another branch</p>
+<p>If you try to delete a branch that has stuff that the current branch does not,a warning will appear and you will be asked to delete is a "-D" not "-d"</p>
 
 
 
-
-
-
-
+<h1>stuff for new branch</h1>
 
 
                

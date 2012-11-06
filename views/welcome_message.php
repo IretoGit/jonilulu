@@ -542,8 +542,65 @@ bea0891 edit 19 wanted
 <p>To show contents of a commit. All details of the commit are shown</p>
 <code>git show "SHA"</code>
 
+<h2>Comparing commits</h2>
+
+<p>To compare between two different commits</p>
+
+<code>git diff b39abf2..42419ce
+</code>
+
+<p>To get a statistical summary</p>
+<code> git diff --stat --summary 4764t..HEAD</code>
+
+<p>To ignore white space, use -b option,  -w ignores all spaces</p>
+
+<code> git diff -b 4764t..HEAD</code>
 
 
+<h2>Branching</h2>
+
+<p>A very powerful feature in Git. Easy to make and manage</p>
+
+<p>To form a new branch</p>
+<code>git branch new_feature</code>
+<p>To form show all branches:</p>
+<code>git branch</code>
+<pre> git branch
+* master
+  new_feature
+</pre>
+
+<p>To show this in configs</p>
+<pre> ls -la .git/refs/heads
+total 16
+drwxr-xr-x 2 ireto ireto 4096 2012-11-06 15:11 .
+drwxr-xr-x 4 ireto ireto 4096 2012-11-04 11:29 ..
+-rw-r--r-- 1 ireto ireto   41 2012-11-06 13:25 master
+-rw-r--r-- 1 ireto ireto   41 2012-11-06 15:11 new_feature
+</pre>
+
+<p>To switch branch, check it out</p>
+
+<code>git checkout new_feature</code>
+<pre> git checkout new_feature
+M	views/welcome_message.php
+Switched to branch 'new_feature'
+</pre>
+<pre>git branch
+  master
+* new_feature
+</pre>
+
+<p>To create and switch branches at the same time, use -b option. It means create and switch at the same time </p>
+<code>git checkout -b second_new_feature</code>
+<pre>git checkout -b second_new_feature
+M	views/welcome_message.php
+Switched to a new branch 'second_new_feature'
+</pre>
+
+
+
+  
                
 	</div>
 

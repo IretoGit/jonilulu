@@ -692,6 +692,14 @@ Saved working directory and index state On master: stash test2
 HEAD is now at 3b4035a text about stash
 </pre>
 
+<pre>After a stash save a reset HARD HEAD is performed. That is the repository is put into staging index and working copy.</pre>
+
+<p>to see a list of stashes</p>
+
+<pre>git stash list
+stash@{0}: On master: stash test2
+stash@{1}: On master: stash test
+</pre>
 
 
 

@@ -677,6 +677,15 @@ No files need merging
 
 </div>
 
+<h2>Stashing changes</h2>
+<p>A stash is a place to store tempoary changes. You can store thigs here to use later.</p>
+<p>It is not part of the repository staging index or working area.</p>
+<p>They are not commits and do not have a SHA associated with them</p>
+
+<p>Often used when you wish to change branches but you are not ready to commit the changes. You put the changes in a stash.</p>
+
+<p>To save a change to stash</p>
+<code>git stash save "the change to stash"</code>
 
 
 </body>

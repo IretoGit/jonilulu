@@ -722,6 +722,23 @@ stash@{1}: On master: stash test
 </code>
 <p>The above will apply the change to the working directory but not remove it from the stash list</p>
 
+<p>To delete stash items</p>
+
+<code>git stash drop stash@{3}
+</code>
+<pre>git stash drop stash@{3}
+Dropped stash@{3} (0c2ccb4bab8725d6daec20c7fb97a7065922a22a)
+</pre>
+
+<p>To remove all the stash:</p>
+
+<code>git status clear</code>
+
+<h1>Remote Working</h1>
+
+<h2>Changes are pushed to a remote server : PUSH</h2>
+<h2>To getremote changes use fetch: FETCH</h2>
+
 
 
 </body>

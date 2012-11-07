@@ -712,10 +712,15 @@ stash@{1}: On master: stash test
 <p>The -p option will show a diff patch, giving more details to teh changes.</p>
 
 
+<p>To get back a stash there are two options</p>
 
+<code>git stash pop stash@{0}
+</code>
+<p>The above will apply the change to the working directory and remove the stash from the stash list</p>
 
-
-
+<code>git stash apply stash@{0}
+</code>
+<p>The above will apply the change to the working directory but not remove it from the stash list</p>
 
 
 

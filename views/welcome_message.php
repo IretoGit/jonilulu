@@ -687,6 +687,16 @@ No files need merging
 <p>To save a change to stash</p>
 <code>git stash save "the change to stash"</code>
 
+<pre>git stash save "stash test2"
+Saved working directory and index state On master: stash test2
+HEAD is now at 3b4035a text about stash
+</pre>
+
+
+
+
+
+
 
 </body>
 </html>

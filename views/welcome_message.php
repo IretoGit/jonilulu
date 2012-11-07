@@ -624,19 +624,59 @@ Switched to a new branch 'second_new_feature'
 
 
 <p>To merge a branch with another. First get into the branch you want to recive the changes.</p>
-<p>Then do the merge control</p>
+<p>Then do the merge control, but make sure it is a clean version. that is nothing to commit</p>
 <code>git merge "branch with changes to join current branch"</code>
 <pre>git merge new
 Updating 0e990d8..221e3a3
 Fast-forward
  views/welcome_message.php |   18 ++++++++++++++----
 </pre>
+<p>Resolving merge conflicts</p>
+<p>There are three ways</p>
 
+<ol>
+<li>Abort the merge</li>
+<li>Resolve conflicts manually</li>
+<li>Use a merge tool</li>
+</ol>
 
+<p>To abort the merge. This returns things to before the merge was attempted.</p>
+<code>git merge --abort</code>
                
-
+<p>To resolve manually the conflicting section will have \"<<<<<<\" or "====="</p>
 	
+<p>The steps are</p>
+<ol>
+<li>Open the files with a conflict</li>
+<li>Find spot with a problem and manually fix it. Do this for all files with a conflict</li>
+<li>Then add all fixed files to the staging index and commit them to complete the merge.</li>
+</ol>
+
+<p>use the following to show the merge process</p>
+
+<code>git log --graph --oneline --all --decorate</code>
+
+<p>To use a tool</p>
+<code>git mergetool --tool="name of merge tool"</code>
+
+<p>To show available merge tools:</p>
+
+<pre> git mergetool
+merge tool candidates: meld opendiff kdiff3 tkdiff xxdiff tortoisemerge gvimdiff diffuse ecmerge p4merge araxis emerge vimdiff
+No files need merging
+</pre>
+
+<p>Strategies for reducing conflicts</p>
+<ul>
+<li>keep lines short</li>
+<li>keep commits small and focused</li>
+<li>beware of stray edits to whitespace</li>
+<li>merge often making conflicts smaller</li>
+<li>track changes to master so the branch does not get too distant from master branch</li>
+</ul>
+
 </div>
+
 
 
 </body>

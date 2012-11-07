@@ -694,12 +694,25 @@ HEAD is now at 3b4035a text about stash
 
 <pre>After a stash save a reset HARD HEAD is performed. That is the repository is put into staging index and working copy.</pre>
 
-<p>to see a list of stashes</p>
+<p>To see a list of stashes</p>
 
 <pre>git stash list
 stash@{0}: On master: stash test2
 stash@{1}: On master: stash test
 </pre>
+<p>To see changes to an individual stash</p>
+
+<code>git stash show stash@{0}</code>
+
+<pre> git stash show stash@{0}
+ views/welcome_message.php |    6 +++++-
+ 1 files changed, 5 insertions(+), 1 deletions(-)
+</pre>
+
+<p>The -p option will show a diff patch, giving more details to teh changes.</p>
+
+
+
 
 
 

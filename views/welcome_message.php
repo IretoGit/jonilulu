@@ -737,9 +737,50 @@ Dropped stash@{3} (0c2ccb4bab8725d6daec20c7fb97a7065922a22a)
 <h1>Remote Working</h1>
 
 <h2>Changes are pushed to a remote server : PUSH</h2>
-<h2>To getremote changes use fetch: FETCH</h2>
+<h2>To get remote changes use fetch: FETCH</h2>
 
+<h3>Setting up a remote repository</h3>
 
+<p>Use GitHub:  -http://github.com</p>
+<p>Free and inexpensive </p>
+
+<p>The free version means it is open to everybody, and anyone can see your code.</p>
+
+<p>some useful git remore commands</p>
+
+<code>git remote</code>
+<code>git remote add origin https://github.com/cvwordchecker/gitnotes.git
+</code>
+
+<pre>git remote -v
+origin	https://github.com/cvwordchecker/gitnotes.git (fetch)
+origin	https://github.com/cvwordchecker/gitnotes.git (push)
+</pre>
+
+<code>git remote remove "alias of remote"</code>
+
+<pre>cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/cvwordchecker/gitnotes.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+ireto@ubuntu:/var/www/git/application$ 
+</pre>
+<h2>To send data to a remote you have to push a branch</h2>
+
+<p>The -u option does branch tracking</p>
+
+<code>git push -u "alias for remote"  "name of branch"</code>
+
+<p>It will ask for user name and password </p>
+
+<h2>Cloning a remote repository</h2>
+
+<p>This concerns get a remote repo and putting it locally</p>
 
 </body>
 </html>

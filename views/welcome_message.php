@@ -837,7 +837,20 @@ To git@github.com:IretoGit/jonilulu.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 </pre>
-
+<p>The git config shows the tracking info:</p>
+<pre>cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:IretoGit/jonilulu.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+</pre>
 
 
 

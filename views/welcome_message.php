@@ -782,5 +782,11 @@ ireto@ubuntu:/var/www/git/application$
 
 <p>This concerns get a remote repo and putting it locally</p>
 
+<p>This might be useful if you want to join a project</p>
+
+<p>You need to get the github path to the remote repoitory</p>
+
+<code>git clone "path to repository"  "folder to contain remote project"</code>
+
 </body>
 </html>

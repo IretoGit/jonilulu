@@ -820,6 +820,28 @@ ireto@ubuntu:/var/www/git/application$
 
 <h2>Checking out remote branches.</h2>
 
+<pre>
+git remote rm originireto@ubuntu:/var/www/git/application/views$ git remote add origin git@github.com:IretoGit/jonilulu.git
+ireto@ubuntu:/var/www/git/application/views$ git push -u origin master
+Counting objects: 182, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (177/177), done.
+Writing objects: 100% (182/182), 40.70 KiB, done.
+Total 182 (delta 76), reused 0 (delta 0)
+To git@github.com:IretoGit/jonilulu.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+</pre>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

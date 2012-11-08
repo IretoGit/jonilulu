@@ -820,6 +820,11 @@ ireto@ubuntu:/var/www/git/application$
 
 <h2>Checking out remote branches.</h2>
 
+
+<h2>You might have to generate public/private keys</h2>
+<h2>Use address below to do this:</h2>
+<h2>https://help.github.com/articles/generating-ssh-keys</h2>
+
 <pre>
 git remote rm originireto@ubuntu:/var/www/git/application/views$ git remote add origin git@github.com:IretoGit/jonilulu.git
 ireto@ubuntu:/var/www/git/application/views$ git push -u origin master

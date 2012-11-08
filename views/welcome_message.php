@@ -796,7 +796,30 @@ ireto@ubuntu:/var/www/git/application$
 <p>This is acheived by using the -u option </p>
 <p>The formation of a clone always tracks the master.</p>
 
-<p></p>
-<code>  </code>
+<p>To compare between a master and a remote</p>
+<code>git diff master..origin/master  </code>
+
+<p> To push the differences. Note there is no need to tell where to push as this is the default, already setup.</p>
+
+<code>git push </code>
+
+<h2>To fetch changes from a remote repository</h2>
+<p>You need to do a fetch before tracking will take place.</p>
+
+<code>git fetch orign</code>
+
+<p>Always fetch before you start a session</p>
+<p>Fetch before you push</p>
+<p>Fetch often, it is non desructive.</p>
+
+<h2>Merging fetching changes</h2>
+
+<h2>git pull = git fetch + git merge</h2>
+
+<p>This will save time but it masking the two processes </p>
+
+<h2>Checking out remote branches.</h2>
+
+
 </body>
 </html>

@@ -788,5 +788,15 @@ ireto@ubuntu:/var/www/git/application$
 
 <code>git clone "path to repository"  "folder to contain remote project"</code>
 
+<h2>Tracking of remote branching</h2>
+
+<p>Thi sconcept making two branches be very closely in sync with each other</p>
+<p>Tracking is very common with remote working.</p>
+<p>It would be a great idea if a master branch knows where it should push to and where to fetch from. That is without having to be told each time. A default setting is needed.</p>
+<p>This is acheived by using the -u option </p>
+<p>The formation of a clone always tracks the master.</p>
+
+<p></p>
+<code>  </code>
 </body>
 </html>

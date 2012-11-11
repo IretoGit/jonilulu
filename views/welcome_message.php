@@ -857,7 +857,10 @@ Branch master set up to track remote branch master from origin.
 
 
 
+<h2>Setting up alias</h2>
 
+<code>git config --global alias.st "status"
+</code>
 
 
 
